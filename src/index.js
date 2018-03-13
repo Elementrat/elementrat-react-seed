@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 
 
 import App from './containers/App';
-import AppData from './reducers/index.js'
+import AppData from './reducers/index'
 
 import './index.css';
 
@@ -14,7 +14,7 @@ const store = createStore(AppData)
 
 ReactDOM.render(
 <Provider store = {store}>
-<App /> 
+    <App /> 
 </Provider>,   
     
     document.getElementById('root'));

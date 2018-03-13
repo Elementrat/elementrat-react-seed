@@ -1,4 +1,356 @@
+#marquee {
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#marquee .bullet {
+  float: left;
+  height: 100%;
+  line-height: 75px;
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #ffa500;
+}
+#marquee .bullet-list {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (min-device-width: 1025px) {
+  #marquee {
+    background-color: #f00;
+    height: 200px;
+  }
+}
+@-moz-keyframes scrollBullets {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+@-webkit-keyframes scrollBullets {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+@-o-keyframes scrollBullets {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+@keyframes scrollBullets {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#intro {
+  width: calc(60vmin);
+  height: calc(60vmin);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  animation: intro-grow 0.5s ease;
+  animation-fill-mode: forwards;
+}
+#intro #phone {
+  animation: phone-grow 0.7s ease;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+  animation-delay: 0.3s;
+}
+#intro #phone #weseeyou-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  height: 69%;
+  display: block;
+  margin: auto auto;
+  overflow: hidden;
+}
+#intro #phone #weseeyou-container #weseeyou {
+  position: absolute;
+  bottom: -42%;
+  word-spacing: 300px;
+  animation: weseeyou-in 2s ease forwards;
+  animation-delay: 2s;
+  color: #ffa500;
+}
+#intro #hand1 {
+  animation-delay: 0.9s;
+}
+#intro #hand2 {
+  animation-delay: 1.2s;
+}
+#intro #hand3 {
+  animation-delay: 1.5s;
+}
+#intro .img {
+  transform: scale(0);
+  animation: phone-grow 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s;
+  background-size: cover;
+  background-position: center;
+}
+#intro .centered {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  position: absolute;
+}
+#circle {
+  width: 60%;
+  height: 60%;
+  background-color: #ffa500;
+  border-radius: 100%;
+}
+@-moz-keyframes weseeyou-in {
+  0% {
+    bottom: -42%;
+  }
+  100% {
+    bottom: 25%;
+  }
+}
+@-webkit-keyframes weseeyou-in {
+  0% {
+    bottom: -42%;
+  }
+  100% {
+    bottom: 25%;
+  }
+}
+@-o-keyframes weseeyou-in {
+  0% {
+    bottom: -42%;
+  }
+  100% {
+    bottom: 25%;
+  }
+}
+@keyframes weseeyou-in {
+  0% {
+    bottom: -42%;
+  }
+  100% {
+    bottom: 25%;
+  }
+}
+@-moz-keyframes phone-grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes phone-grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes phone-grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes phone-grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes intro-grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes intro-grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes intro-grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes intro-grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 html {
   margin: 0;
   padding: 0;
+}
+.App {
+  width: 100%;
+  height: 100%;
+  font-family: 'Bangers';
 }
