@@ -10,6 +10,8 @@
     "redux": "^3.7.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "start react-scripts start && start stylus -w src/styles/App.styl -o src/App.css",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
