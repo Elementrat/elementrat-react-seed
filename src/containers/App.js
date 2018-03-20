@@ -1,23 +1,22 @@
-import { connect } from 'react-redux'
-import AppComponent from '../components/App'
-
+import { connect } from 'react-redux';
+import AppComponent from '../components/App.jsx';
 import '../App.css';
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    data : state.data
-  }
-}
+    data: state.data,
+  };
+};
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-
-  }
-} 
+    //
+  };
+};
 
 const App = connect(
   mapStateToProps,
-  mapDispatchToProps
-)(AppComponent)
+  mapDispatchToProps,
+)(AppComponent);
 
 export default App;
