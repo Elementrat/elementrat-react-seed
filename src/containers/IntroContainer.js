@@ -1,4 +1,4 @@
-import MarqueeComponent from '../components/MarqueeComponent'
+import IntroComponent from '../components/IntroComponent'
 import { connect } from 'react-redux'
 
 const mapStateToProps = state =>{
@@ -13,9 +13,9 @@ const mapDispatchToProps = state =>{
     }
 }
 
-const Marquee = connect(
+const Intro = connect(
     mapStateToProps,
     mapDispatchToProps
 )(MarqueeComponent)
 
-export default Marquee
+export default Intro

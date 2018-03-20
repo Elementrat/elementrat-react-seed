@@ -1,6 +1,5 @@
 import { connect } from 'react-redux'
 import AppComponent from '../components/App'
-import Marquee from '../containers/MarqueeContainer'
 
 import '../App.css';
 
