@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import AppComponent from '../components/App.jsx';
+import AppComponent from '../components/App';
 import '../App.css';
 
 const mapStateToProps = (state) => {
@@ -16,7 +16,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const App = connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(AppComponent);
 
 export default App;

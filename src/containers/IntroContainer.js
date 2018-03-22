@@ -1,21 +1,20 @@
-import IntroComponent from '../components/IntroComponent'
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import IntroComponent from '../components/IntroComponent';
 
-const mapStateToProps = state =>{
-    return {
-        bullets : state.data.bullets
-    }
-}
+const mapStateToProps = state => (
+  {
+    bullets: state.data.bullets,
+  }
+);
 
-const mapDispatchToProps = state =>{
-    return {
 
-    }
-}
+const mapDispatchToProps = state => ({
+
+});
 
 const Intro = connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(MarqueeComponent)
+  mapStateToProps,
+  mapDispatchToProps
+)(IntroComponent);
 
-export default Intro
+export default Intro;
